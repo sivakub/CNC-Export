@@ -1,0 +1,13 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"addin",
+	"id":	"1d77e1ba-1696-417e-a3a9-e560dec6043d",
+	"author":	"Boopathi Sivakumar",
+	"description":	{
+		"":	"Dumper Export and CNC file export"
+	},
+	"version":	"1.1.0",
+	"runOnStartup":	true, 
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}
