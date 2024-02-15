@@ -136,13 +136,10 @@ class CNCcommandExcuteHandler(adsk.core.CommandEventHandler):
             products = doc.products
             product = products.itemByProductType('CAMProductType')
             cam = adsk.cam.CAM.cast(product)
-            #command = args.firingEvent.sender
-            # Get the post file Directory
-            dir2 = os.path.dirname(os.path.abspath(__file__))
 
             programName = _InputPgName.value
             outputFolder = cam.temporaryFolder
-            postConfig =  os.path.join(dir2 + '\Post\export cnc file to vs code.cps') 
+            postConfig =  os.path.join(cam.genericPostFolder, 'export cnc file to vs code.cps') 
             # specify the NC file output units
             units = adsk.cam.PostOutputUnitOptions.DocumentUnitsOutput
 
